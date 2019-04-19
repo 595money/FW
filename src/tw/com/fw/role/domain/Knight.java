@@ -15,7 +15,6 @@ package tw.com.fw.role.domain;
 public class Knight extends AbstractRole {
   @Override
   public String toString() {
-
     return "";
   }
 }

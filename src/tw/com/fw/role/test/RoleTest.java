@@ -1,6 +1,7 @@
 package tw.com.fw.role.test;
 
 import tw.com.fw.role.domain.Knight;
+
 /**
  * 
  * @since 2019-03-30 18:41:25

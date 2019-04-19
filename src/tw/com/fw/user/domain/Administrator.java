@@ -3,6 +3,8 @@
  */
 package tw.com.fw.user.domain;
 
+import tw.com.fw.permission.domain.AdminstractPemissionImp;
+
 /**
  * 
  * @version
@@ -12,9 +14,11 @@ package tw.com.fw.user.domain;
  * @since 0.1.0
  * @author PigMiLK
  */
-public class Administrator extends AbstractUser {
-  @Override
-  public String toString() {
-    return "";
+public class Administrator extends AbstractIdentity {
+
+  public Administrator() {
+    this.setAdministrator(true);
+    // TODO Maybe stmt can use dynamic string ?
+    this.setPermission(new AdminstractPemissionImp());
   }
 }

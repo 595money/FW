@@ -3,6 +3,8 @@
  */
 package tw.com.fw.role.domain;
 
+import tw.com.fw.dano.model.ICystal;
+
 /**
  * 
  * @version
@@ -12,7 +14,7 @@ package tw.com.fw.role.domain;
  * @since 0.1.0
  * @author PigMiLK
  */
-public abstract class AbstractRole {
+public abstract class AbstractRole implements ICystal {
 
   private String strength;
   private String dexterity;
