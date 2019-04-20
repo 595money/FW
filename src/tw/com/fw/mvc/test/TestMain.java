@@ -4,13 +4,13 @@
 package tw.com.fw.mvc.test;
 
 import tw.com.fw.dano.domain.Dano;
-import tw.com.fw.dano.model.AbstractTemple;
-import tw.com.fw.dano.model.ICystal;
-import tw.com.fw.dano.model.IdentityTemple;
-import tw.com.fw.dano.model.RoleTemple;
 import tw.com.fw.role.domain.AbstractRole;
 import tw.com.fw.role.domain.Knight;
 import tw.com.fw.role.domain.Novice;
+import tw.com.fw.temple.model.AbstractTemple;
+import tw.com.fw.temple.model.ICrystal;
+import tw.com.fw.temple.model.IdentityTemple;
+import tw.com.fw.temple.model.RoleTemple;
 import tw.com.fw.user.domain.AbstractIdentity;
 import tw.com.fw.user.domain.Administrator;
 import tw.com.fw.user.domain.Adventurer;
@@ -36,11 +36,11 @@ public class TestMain {
     AbstractRole NoviceT = new Novice();
     DanoT2 = new Dano(AdministratorT, NoviceT);
     System.out.println(DanoT2.toString());
-    
+
     Dano DanoT3 = new Dano();
     AbstractTemple IdentityFactoryT = new IdentityTemple();
     AbstractTemple RoleFactoryT = new RoleTemple();
-    ICystal AbstractIdentityT = IdentityFactoryT.create("");
-    ICystal AbstractRoleT = RoleFactoryT.create("");
+    ICrystal AbstractIdentityT = IdentityFactoryT.create("");
+    ICrystal AbstractRoleT = RoleFactoryT.create("");
   }
 }

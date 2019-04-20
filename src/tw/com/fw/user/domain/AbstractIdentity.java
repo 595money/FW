@@ -1,8 +1,8 @@
 package tw.com.fw.user.domain;
 
 import java.sql.SQLException;
-import tw.com.fw.dano.model.ICystal;
 import tw.com.fw.permission.model.IPermission;
+import tw.com.fw.temple.model.ICrystal;
 
 /**
  * 
@@ -15,7 +15,7 @@ import tw.com.fw.permission.model.IPermission;
  * @since 0.3.0
  * @author PigMiLK
  */
-public abstract class AbstractIdentity implements ICystal {
+public abstract class AbstractIdentity implements ICrystal {
   protected String account;
   protected String email;
   protected String name;

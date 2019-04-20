@@ -2,6 +2,7 @@ package tw.com.fw.dano.domain;
 
 import tw.com.fw.permission.model.IPermission;
 import tw.com.fw.role.domain.AbstractRole;
+import tw.com.fw.temple.model.ICrystal;
 import tw.com.fw.user.domain.AbstractIdentity;
 
 /**
@@ -13,7 +14,7 @@ import tw.com.fw.user.domain.AbstractIdentity;
  * @since 0.1.0
  * @author PigMiLK
  */
-public class Dano {
+public class Dano implements ICrystal{
   AbstractIdentity identity;
   AbstractRole role;
   IPermission Permission;
@@ -34,8 +35,8 @@ public class Dano {
 
   /**
    * 
-   * @param AbstractIdentity 身分
-   * @param AbstractRole 職業
+   * @param AbstractIdentity 頨怠��
+   * @param AbstractRole �璆�
    * @version
    *          <ul>
    *          <li>0.1.0 2019-04-10 23:06:11,Created by PigMiLK</li>
