@@ -4,6 +4,7 @@
 package tw.com.fw.permission.domain;
 
 import java.util.ArrayList;
+import org.springframework.stereotype.Component;
 import tw.com.fw.permission.model.IPermission;
 
 /**
@@ -14,6 +15,7 @@ import tw.com.fw.permission.model.IPermission;
  * @since 0.1.0
  * @author PigMiLK
  */
+@Component
 public class AdminstractPemissionImp implements IPermission {
   private ArrayList<String> permissions;
 

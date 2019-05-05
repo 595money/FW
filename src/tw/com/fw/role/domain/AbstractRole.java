@@ -15,7 +15,7 @@ import tw.com.fw.temple.model.ICrystal;
  * @author PigMiLK
  */
 public abstract class AbstractRole implements ICrystal {
-
+  private String level;
   private String strength;
   private String dexterity;
   private String intelligence;
@@ -23,6 +23,26 @@ public abstract class AbstractRole implements ICrystal {
   private String agility;
   private String wisdom;
   private String magic;
+
+  /**
+   * @version
+   *          <ul>
+   *          <li>0.1.0 2019-04-21 17:53:06,Created by PigMiLK</li>
+   *          </ul>
+   * @since 0.1.0
+   * @author PigMiLK
+   */
+  public abstract void inborn();
+
+  /**
+   * @version
+   *          <ul>
+   *          <li>0.1.0 2019-04-21 17:53:12,Created by PigMiLK</li>
+   *          </ul>
+   * @since 0.1.0
+   * @author PigMiLK
+   */
+  public abstract void acquired();
 
   /**
    * @return the strength
@@ -120,6 +140,20 @@ public abstract class AbstractRole implements ICrystal {
    */
   public void setMagic(String magic) {
     this.magic = magic;
+  }
+
+  /**
+   * @return the level
+   */
+  public String getLevel() {
+    return level;
+  }
+
+  /**
+   * @param level the level to set
+   */
+  public void setLevel(String level) {
+    this.level = level;
   }
 
 }

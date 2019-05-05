@@ -3,6 +3,7 @@
  */
 package tw.com.fw.user.domain;
 
+import org.springframework.stereotype.Component;
 import tw.com.fw.permission.domain.AdminstractPemissionImp;
 
 /**
@@ -14,11 +15,16 @@ import tw.com.fw.permission.domain.AdminstractPemissionImp;
  * @since 0.1.0
  * @author PigMiLK
  */
+@Component
 public class Administrator extends AbstractIdentity {
 
   public Administrator() {
     this.setAdministrator(true);
     // TODO Maybe stmt can use dynamic string ?
     this.setPermission(new AdminstractPemissionImp());
+  }
+  @Override
+  public String toString() {
+  return "I'm Administrator";  
   }
 }

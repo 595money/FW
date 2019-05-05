@@ -3,6 +3,8 @@
  */
 package tw.com.fw.role.domain;
 
+import org.springframework.stereotype.Component;
+
 /**
  * 
  * @version
@@ -12,10 +14,23 @@ package tw.com.fw.role.domain;
  * @since 0.1.0
  * @author PigMiLK
  */
+
 public class Novice extends AbstractRole {
   @Override
   public String toString() {
     return "";
+  }
+
+  @Override
+  public void inborn() {
+    // TODO Auto-generated method stub
+    
+  }
+
+  @Override
+  public void acquired() {
+    // TODO Auto-generated method stub
+    
   }
 
 }

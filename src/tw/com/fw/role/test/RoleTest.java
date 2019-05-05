@@ -4,8 +4,10 @@ import tw.com.fw.role.domain.Knight;
 
 /**
  * 
- * @since 2019-03-30 18:41:25
- * @version 0.1.0
+ * @version <ul> 
+ *              <li>0.1.0 2019-04-21 18:08:29,Created by PigMiLK</li>
+ *          </ul> 
+ * @since 0.1.0
  * @author PigMiLK
  */
 public class RoleTest {
@@ -19,7 +21,8 @@ public class RoleTest {
    */
   public static void main(String[] args) {
     Knight k = new Knight();
-
-    System.out.println();
+    k.setLevel("20");
+    k.inborn();
+    System.out.println(k.getStrength());
   }
 }

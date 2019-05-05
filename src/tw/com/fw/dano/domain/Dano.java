@@ -1,5 +1,7 @@
 package tw.com.fw.dano.domain;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 import tw.com.fw.permission.model.IPermission;
 import tw.com.fw.role.domain.AbstractRole;
 import tw.com.fw.temple.model.ICrystal;
@@ -14,10 +16,14 @@ import tw.com.fw.user.domain.AbstractIdentity;
  * @since 0.1.0
  * @author PigMiLK
  */
+@Component
 public class Dano implements ICrystal{
+  @Autowired
   AbstractIdentity identity;
+  @Autowired
   AbstractRole role;
-  IPermission Permission;
+//  @Autowired
+//  IPermission Permission;
 
   /**
    * Non-parameterized Constructor
@@ -33,22 +39,22 @@ public class Dano implements ICrystal{
     super();
   }
 
-  /**
-   * 
-   * @param AbstractIdentity 頨怠��
-   * @param AbstractRole �璆�
-   * @version
-   *          <ul>
-   *          <li>0.1.0 2019-04-10 23:06:11,Created by PigMiLK</li>
-   *          </ul>
-   * @since 0.1.0
-   * @author PigMiLK
-   */
-  public Dano(AbstractIdentity identity, AbstractRole role) {
-    super();
-    this.identity = identity;
-    this.role = role;
-  }
+//  /**
+//   * 
+//   * @param AbstractIdentity
+//   * @param AbstractRole
+//   * @version
+//   *          <ul>
+//   *          <li>0.1.0 2019-04-10 23:06:11,Created by PigMiLK</li>
+//   *          </ul>
+//   * @since 0.1.0
+//   * @author PigMiLK
+//   */
+//  public Dano(AbstractIdentity identity, AbstractRole role) {
+//    super();
+//    this.identity = identity;
+//    this.role = role;
+//  }
 
   /* (non-Javadoc)
    * @see java.lang.Object#toString()
@@ -60,8 +66,8 @@ public class Dano implements ICrystal{
     builder.append(identity);
     builder.append(", role=");
     builder.append(role);
-    builder.append(", Permission=");
-    builder.append(Permission);
+//    builder.append(", Permission=");
+//    builder.append(Permission);
     builder.append(", getClass()=");
     builder.append(getClass());
     builder.append(", hashCode()=");

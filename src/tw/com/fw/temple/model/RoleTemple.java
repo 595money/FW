@@ -1,5 +1,6 @@
 package tw.com.fw.temple.model;
 
+import tw.com.fw.constant.domain.Text;
 import tw.com.fw.role.domain.Knight;
 import tw.com.fw.role.domain.Novice;
 
@@ -22,11 +23,14 @@ public class RoleTemple extends AbstractTemple {
     // TODO 3.return role
 
     // TODO 方便測試先寫死
-    if ("KNIGHT".equals(prayer)) {
+    if (Text.ROLE_KNIGHT.equals(prayer)) {
       return new Knight();
-    } else {
+    }
+    if (Text.ROLE_KNIGHT.equals(prayer)) {
       return new Novice();
     }
+    return null;
   }
-
 }
+
+

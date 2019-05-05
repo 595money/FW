@@ -1,5 +1,6 @@
 package tw.com.fw.temple.model;
 
+import tw.com.fw.constant.domain.Text;
 import tw.com.fw.user.domain.Administrator;
 import tw.com.fw.user.domain.Adventurer;
 
@@ -22,11 +23,14 @@ public class IdentityTemple extends AbstractTemple {
     // TODO 3.return role
 
     // TODO 方便測試先寫死
-    if ("ADMIN".equals(prayer)) {
+    if (Text.ID_ADMINISTRATOR.equals(prayer)) {
       return new Administrator();
-    } else {
+    }
+
+    if (Text.ID_ADVENTURER.equals(prayer)) {
       return new Adventurer();
     }
+    return null;
 
   }
 
